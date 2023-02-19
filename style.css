@@ -6,7 +6,6 @@
 }
 
 body{
-    background-color: #00002c;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,6 +21,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 10px 20px 5px gray;
 }
 
 .card{
@@ -151,4 +151,18 @@ body{
     cursor: pointer;
 }
 
+footer{
+    position: absolute;
+    bottom: 0;
+}
 
+@media(max-width: 540px){
+    .main-container{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    footer{
+        display: none;
+    }
+}
